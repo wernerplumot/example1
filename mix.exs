@@ -3,7 +3,7 @@ defmodule Example1.MixProject do
 
   def project do
     [
-      app: :example1,
+      app: :example,
       version: "0.1.0",
       elixir: "~> 1.16",
       start_permanent: Mix.env() == :prod,
@@ -14,6 +14,7 @@ defmodule Example1.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
+      mod: { Example, []},
       extra_applications: [:logger]
     ]
   end
